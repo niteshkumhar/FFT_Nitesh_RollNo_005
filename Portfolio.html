@@ -1,91 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitesh Kumhar - Portfolio</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 680px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #222;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 0 15px;
             line-height: 1.6;
         }
-
-        h1 { margin-bottom: 4px; }
-        .subtitle { color: #555; margin-bottom: 12px; }
-        .contact { margin-bottom: 30px; font-size: 0.95rem; }
-        .contact a { color: #0066cc; text-decoration: none; }
-
-        h2 {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 4px;
-            margin-top: 28px;
-            margin-bottom: 12px;
-            font-size: 1.15rem;
+        .header-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #2b6cb0;
+            margin-bottom: 20px;
         }
 
-        ul { padding-left: 20px; margin: 8px 0; }
-        li { margin-bottom: 6px; }
+        h1 {
+            margin: 0 0 5px 0;
+            color: #1a365d;
+        }
 
-        .entry { margin-bottom: 14px; }
-        .entry-title { font-weight: 600; }
-        .entry-sub { color: #666; font-size: 0.9rem; }
+        .subtitle {
+            color: #2b6cb0;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            color: #555555;
+        }
+
+        .contact a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+                .card {
+            background-color: #ffffff;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #dce3eb;
+        }
+
+        h2 {
+            color: #1a365d;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+
+        p {
+            margin: 0;
+            color: #4a5568;
+        }
+        .skill-box {
+            margin-top: 5px;
+        }
+
+        .skill-item {
+            display: inline-block;
+            background-color: #ebf4ff;
+            color: #2b6cb0;
+            padding: 4px 10px;
+            margin: 3px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .entry {
+            margin-bottom: 12px;
+        }
+
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 2px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #4a5568;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Nitesh Kumhar</h1>
-    <div class="subtitle">ML & Deep Learning Engineer</div>
-    <div class="contact">
-        Email: <a href="mailto:niteshkumhar898@gmail.com">niteshkumhar898@gmail.com</a> | 
-        Phone: +91 98765 43210
+    <div class="header-box">
+        <h1>Nitesh Kumhar</h1>
+        <div class="subtitle">ML & Deep Learning Engineer</div>
+        <div class="contact">
+            Email: <a href="mailto:niteshkumhar898@gmail.com">niteshkumhar898@gmail.com</a> | 
+            Phone: +91 98765 43210
+        </div>
     </div>
 
-    <h2>About</h2>
-    <p>Dedicated ML and Deep Learning Engineer focusing on Computer Vision, AI, Automation, and Robotics. Experienced in developing neural architectures, autonomous systems, and predictive models to solve real-world engineering problems.</p>
-
-    <h2>Skills</h2>
-    <p>Python, TensorFlow, Keras, OpenCV, NumPy, Pandas, Machine Learning, Deep Learning, Automation & Robotics.</p>
-
-    <h2>Projects</h2>
-    <div class="entry">
-        <div class="entry-title">AI Plant Disease Detection</div>
-        <p>Built a CNN-based computer vision model using TensorFlow and OpenCV to detect and classify foliage diseases from leaf images.</p>
-    </div>
-    <div class="entry">
-        <div class="entry-title">AI Chatbot (Alexa / Jarvis)</div>
-        <p>Created an intelligent conversational voice assistant capable of speech recognition and voice-driven automation workflows.</p>
-    </div>
-    <div class="entry">
-        <div class="entry-title">AI Structure Inspector</div>
-        <p>Developed an automated computer vision framework to inspect structural integrity and identify surface defects.</p>
+    <div class="card">
+        <h2>About</h2>
+        <p>Dedicated ML and Deep Learning Engineer focusing on Computer Vision, AI, Automation, and Robotics. Experienced in developing neural architectures, autonomous systems, and predictive models to solve real-world engineering problems.</p>
     </div>
 
-    <h2>Experience</h2>
-    <div class="entry">
-        <div class="entry-title">Campus Ambassador — eDC, IIT Delhi</div>
-        <p>Led technical outreach programs and coordinated student innovation initiatives.</p>
-    </div>
-    <div class="entry">
-        <div class="entry-title">Student Ambassador — Google Student Ambassador Program</div>
-        <p>Organized technology workshops and led peer learning sessions on developer tools.</p>
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <span class="skill-item">Python</span>
+            <span class="skill-item">TensorFlow</span>
+            <span class="skill-item">Keras</span>
+            <span class="skill-item">OpenCV</span>
+            <span class="skill-item">NumPy</span>
+            <span class="skill-item">Pandas</span>
+            <span class="skill-item">Machine Learning</span>
+            <span class="skill-item">Deep Learning</span>
+            <span class="skill-item">Automation & Robotics</span>
+        </div>
     </div>
 
-    <h2>Education</h2>
-    <ul>
-        <li><strong>MCA in Data Science</strong> – Alliance University <em>(Pursuing)</em></li>
-        <li><strong>B.Sc. IT</strong> – GLS University <em>(Completed)</em></li>
-    </ul>
+    <div class="card">
+        <h2>Projects</h2>
+        <div class="entry">
+            <div class="entry-title">AI Plant Disease Detection</div>
+            <p>Built a CNN-based computer vision model using TensorFlow and OpenCV to detect and classify foliage diseases from leaf images.</p>
+        </div>
+        <div class="entry">
+            <div class="entry-title">AI Chatbot (Alexa / Jarvis)</div>
+            <p>Created an intelligent conversational voice assistant capable of speech recognition and voice-driven automation workflows.</p>
+        </div>
+        <div class="entry">
+            <div class="entry-title">AI Structure Inspector</div>
+            <p>Developed an automated computer vision framework to inspect structural integrity and identify surface defects.</p>
+        </div>
+    </div>
 
-    <h2>Certificates</h2>
-    <ul>
-        <li>Google Student Ambassador Program Certification</li>
-        <li>HackOut'25 Participation Certificate – DA-IICT</li>
-        <li>Internshala Student Program (ISP 54) – High Performer</li>
-    </ul>
+    <div class="card">
+        <h2>Experience</h2>
+        <div class="entry">
+            <div class="entry-title">Campus Ambassador — eDC, IIT Delhi</div>
+            <p>Led technical outreach programs and coordinated student innovation initiatives.</p>
+        </div>
+        <div class="entry">
+            <div class="entry-title">Student Ambassador — Google Student Ambassador Program</div>
+            <p>Organized technology workshops and led peer learning sessions on developer tools.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>MCA in Data Science</strong> – Alliance University <em>(Pursuing)</em></li>
+            <li><strong>B.Sc. IT</strong> – GLS University <em>(Completed)</em></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Certificates</h2>
+        <ul>
+            <li>Google Student Ambassador Program Certification</li>
+            <li>HackOut'25 Participation Certificate – DA-IICT</li>
+            <li>Internshala Student Program (ISP 54) – High Performer</li>
+        </ul>
+    </div>
 
 </body>
 </html>

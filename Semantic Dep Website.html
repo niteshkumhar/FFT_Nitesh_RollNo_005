@@ -1,0 +1,510 @@
+<html>
+<head>
+    <title>Semantic Department Website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #222;
+        }
+
+        header {
+            background-color: rgb(61, 103, 139);
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow: 2px 4px 5px white;
+            padding-top: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+        }
+
+        nav li a:hover {
+            color: #ffeb3b;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            color: blue;
+            text-shadow: 2px 4px 6px #bbb;
+            margin: 20px 0;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: rgb(61, 103, 139);
+        }
+
+        section {
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        article {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f1f5f9;
+            border-radius: 8px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-card {
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            box-shadow: 10px 15px 20px rgb(23, 47, 134);
+            border-radius: 20px;
+        }
+
+        .program-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(61, 103, 139);
+            color: white;
+        }
+
+
+        ul {
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, textarea, select, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: rgb(61, 103, 139);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        footer {
+            background-color: rgb(61, 103, 139);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Semantic Department Website</h1>
+        <!-- <p style="color: aliceblue; font-size: 19px; font-weight: 500;">Alliance School of Advanced Computing</p> -->
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About School</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#courses">Academic Programs</a></li>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+
+    <!-- 1. HOME -->
+    <section id="home">
+        <marquee>
+            <h2>Dear Student, Welcome to Alliance School of Advanced Computing</h2>
+        </marquee>
+        <p>
+            Alliance School of Advanced Computing brings together world-class technical education, modern computing labs, 
+            and industry-driven curricula. We specialize in cutting-edge domains including Artificial Intelligence, 
+            Data Science, Cyber Security, and Software Architecture to train the next generation of technology leaders.
+        </p>
+
+        <h3>Specialization Highlights</h3>
+        <div class="image-gallery">
+            <figure class="image-card">
+                <img src="./brianpenny-robot-8563416.jpg" alt="AI and ML">
+                <figcaption><p><strong>Artificial Intelligence & ML</strong></p></figcaption>
+            </figure>
+
+            <figure class="image-card">
+                <img src="./geralt-ai-generated-8703603.jpg" alt="Data Science">
+                <figcaption><p><strong>Data Science & Big Data</strong></p></figcaption>
+            </figure>
+
+            <figure class="image-card">
+                <img src="./jaydeep-cyber-security-4785679.png" alt="Cyber Security">
+                <figcaption><p><strong>Cyber Security & Forensics</strong></p></figcaption>
+            </figure>
+
+            <figure class="image-card">
+                <img src="./piro4d-chess-1716822.jpg" alt="Game Development">
+                <figcaption><p><strong>Interactive & Game Systems</strong></p></figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT DEPARTMENT -->
+    <section id="about">
+        <h2>About Alliance School of Advanced Computing</h2>
+        <article>
+            <h3>Vision</h3>
+            <p>To be recognized globally as an incubator for next-generation computing research, technological entrepreneurship, and hands-on software leadership.</p>
+        </article>
+
+        <article>
+            <h3>Mission</h3>
+            <ul>
+                <li>Provide curriculum aligned with top industry benchmarks across all undergraduate and postgraduate computing degrees.</li>
+                <li>Establish modern computational hubs for applied machine intelligence, security, and cloud frameworks.</li>
+                <li>Encourage collaborative research and startup culture among students and faculty members.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Core Objectives</h3>
+            <ul>
+                <li>Equip students across B.Tech, BCA, B.Sc, M.Tech, MCA, and M.Sc with deep problem-solving and algorithmic foundations.</li>
+                <li>Maintain 100% experiential learning through real-time capstone projects, coding bootcamps, and industrial internships.</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- 3. FACULTY & LEADERSHIP -->
+    <section id="faculty">
+        <h2>Faculty & Department Leadership</h2>
+        
+        <article>
+            <h3>Dr. K. Sharma</h3>
+            <p><strong>Designation:</strong> Professor & Head of the Department (HOD)</p>
+            <p><strong>Qualification:</strong> Ph.D. in Computer Science & Engineering</p>
+            <p><strong>Specialization:</strong> Distributed Systems, Machine Learning Architectures</p>
+            <p><strong>Courses Handled:</strong> Advanced Algorithms (M.Tech), Machine Learning (B.Tech / MCA)</p>
+        </article>
+
+        <article>
+            <h3>Prof. R. Menon</h3>
+            <p><strong>Designation:</strong> Professor</p>
+            <p><strong>Qualification:</strong> Ph.D. in Information Technology</p>
+            <p><strong>Specialization:</strong> Big Data Engineering & Database Internals</p>
+            <p><strong>Courses Handled:</strong> Database Management Systems (BCA / B.Tech), Cloud Computing (M.Sc)</p>
+        </article>
+
+        <article>
+            <h3>Dr. S. Nair</h3>
+            <p><strong>Designation:</strong> Associate Professor</p>
+            <p><strong>Qualification:</strong> M.Tech, Ph.D. in Cyber Systems</p>
+            <p><strong>Specialization:</strong> Cryptography, Network Defense</p>
+            <p><strong>Courses Handled:</strong> Network Security (B.Tech / B.Sc), Cyber Forensics (MCA)</p>
+        </article>
+
+        <article>
+            <h3>Prof. A. Verma</h3>
+            <p><strong>Designation:</strong> Assistant Professor</p>
+            <p><strong>Qualification:</strong> M.Tech in Software Engineering</p>
+            <p><strong>Specialization:</strong> Full Stack Development, Object-Oriented Frameworks</p>
+            <p><strong>Courses Handled:</strong> Java & Python Programming (BCA / B.Sc), Software Engineering (B.Tech)</p>
+        </article>
+    </section>
+
+    <!-- 4. ACADEMIC PROGRAMS & COURSES -->
+    <section id="courses">
+        <h2>Academic Programs Offered</h2>
+        <p>Alliance School of Advanced Computing provides a full ladder of undergraduate and postgraduate degrees:</p>
+        
+        <div class="program-container">
+            <article>
+                <h3>B.Tech (CSE)</h3>
+                <p><strong>Bachelor of Technology in Computer Science & Engineering</strong></p>
+                <ul>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Operating Systems & Compilers</li>
+                    <li>AI, ML & Deep Learning</li>
+                    <li>Full Stack Web Development</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>M.Tech (CSE)</h3>
+                <p><strong>Master of Technology in Computer Science</strong></p>
+                <ul>
+                    <li>Advanced Distributed Systems</li>
+                    <li>High Performance Computing</li>
+                    <li>Big Data Analytics & IoT</li>
+                    <li>Dissertation & Research Project</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>BCA</h3>
+                <p><strong>Bachelor of Computer Applications</strong></p>
+                <ul>
+                    <li>Programming with C++ & Java</li>
+                    <li>Relational Database Systems (RDBMS)</li>
+                    <li>Web Design & UI/UX Basics</li>
+                    <li>Mobile App Development</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>MCA</h3>
+                <p><strong>Master of Computer Applications</strong></p>
+                <ul>
+                    <li>Enterprise Software Architecture</li>
+                    <li>Cloud Infrastructure & DevOps</li>
+                    <li>Cyber Security & Ethical Hacking</li>
+                    <li>Industrial Capstone Internship</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>B.Sc (Computer Science)</h3>
+                <p><strong>Bachelor of Science in Computer Science</strong></p>
+                <ul>
+                    <li>Discrete Mathematical Structures</li>
+                    <li>Python for Scientific Computing</li>
+                    <li>Statistical Modeling & Data Analytics</li>
+                    <li>Computer Organization & Networks</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>M.Sc (Data Science / CS)</h3>
+                <p><strong>Master of Science in Computing</strong></p>
+                <ul>
+                    <li>Predictive Analytics & AI Modeling</li>
+                    <li>Advanced Statistical Inference</li>
+                    <li>Natural Language Processing (NLP)</li>
+                    <li>Research Methodologies</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- 5. TIMETABLE -->
+    <section id="timetable">
+        <h2>Timetable & Schedules</h2>
+        <h3>Regular Class Schedule</h3>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>09:00 - 10:30 AM</th>
+                <th>10:45 - 12:15 PM</th>
+                <th>01:15 - 02:45 PM</th>
+                <th>03:00 - 04:30 PM</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Data Structures (B.Tech/BCA)</td>
+                <td>Operating Systems (B.Tech)</td>
+                <td>Advanced Algorithms (M.Tech/MCA)</td>
+                <td>Python Programming (B.Sc)</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>DBMS (BCA/B.Sc)</td>
+                <td>Machine Learning (B.Tech/MCA)</td>
+                <td>Discrete Math (B.Sc)</td>
+                <td>Library / Research Hour</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Cyber Security (B.Tech)</td>
+                <td>Data Mining (M.Sc)</td>
+                <td>Web Frameworks (BCA)</td>
+                <td>Seminar & Coding Club</td>
+            </tr>
+        </table>
+
+        <h3>Laboratory Schedule</h3>
+        <table>
+            <tr>
+                <th>Batch / Class</th>
+                <th>Day</th>
+                <th>Timing</th>
+                <th>Lab Room</th>
+            </tr>
+            <tr>
+                <td>B.Tech (Batch 1)</td>
+                <td>Thursday</td>
+                <td>01:30 - 04:30 PM</td>
+                <td>Advanced Computing Lab (Lab 201)</td>
+            </tr>
+            <tr>
+                <td>BCA & B.Sc</td>
+                <td>Friday</td>
+                <td>09:00 - 12:00 PM</td>
+                <td>Open Source Systems Lab (Lab 105)</td>
+            </tr>
+            <tr>
+                <td>M.Tech, MCA & M.Sc</td>
+                <td>Saturday</td>
+                <td>10:00 - 01:00 PM</td>
+                <td>AI & High-Performance Lab (Lab 302)</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 6. ACHIEVEMENTS -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <article>
+            <h3>Student Highlights</h3>
+            <ul>
+                <li>B.Tech and MCA collaborative team bagged 1st place in the National Smart India Hackathon.</li>
+                <li>B.Sc Data Science students published 3 co-authored research papers in peer-reviewed IEEE conferences.</li>
+                <li>Over 92% placement conversion rate across BCA and B.Tech batches in Tier-1 IT companies.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Faculty Honors</h3>
+            <ul>
+                <li>HOD Dr. K. Sharma awarded "Excellence in AI Pedagogy" by the Computer Society Chapter.</li>
+                <li>Funded laboratory research grant of INR 25 Lakhs received for Cyber Defense Research.</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- 7. EVENTS -->
+    <section id="events">
+        <h2>Events & Workshops</h2>
+        <article>
+            <h3>Hands-on Workshops</h3>
+            <p>3-day intensive boot camp on Microservices, Docker, and Kubernetes deployment pipelines.</p>
+        </article>
+
+        <article>
+            <h3>Guest Seminars</h3>
+            <p>Industry tech talk on "Scalable Distributed Databases" delivered by lead engineers from Bengaluru's tech corridor.</p>
+        </article>
+
+        <article>
+            <h3>Alliance HackFest</h3>
+            <p>Annual 36-hour non-stop hackathon welcoming B.Tech, M.Tech, BCA, MCA, and B.Sc/M.Sc developers to build real-world campus tools.</p>
+        </article>
+    </section>
+
+    <!-- 8. CONTACT -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <address style="font-style: normal; text-align: center; margin-bottom: 20px;">
+            <p><strong>Alliance School of Advanced Computing</strong></p>
+            <p>Alliance University Central Campus, Chikkahagade Cross, Chandapura - Anekal Main Road</p>
+            <p>Bengaluru – 562 106, Karnataka, India</p>
+            <p><strong>Email:</strong> asac@alliance.edu.in | <strong>Phone:</strong> +91 80 4619 9000</p>
+        </address>
+
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select required>
+                <option value="" disabled selected>Select Program of Interest</option>
+                <option value="btech">B.Tech (Computer Science & Engineering)</option>
+                <option value="mtech">M.Tech (Computer Science)</option>
+                <option value="bca">BCA (Bachelor of Computer Applications)</option>
+                <option value="mca">MCA (Master of Computer Applications)</option>
+                <option value="bsc">B.Sc (Computer Science)</option>
+                <option value="msc">M.Sc (Data Science / Computing)</option>
+            </select>
+            <textarea rows="4" placeholder="Your Message / Query" required></textarea>
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Alliance School of Advanced Computing | Alliance University. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

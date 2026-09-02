@@ -4,79 +4,143 @@
     <title>Student Registration Form</title>
 </head>
 <style>
-    form{
+    form {
+        margin-top: 50px;
         border: 1px solid black;
         width: 600px;
-        margin-left: 350px;
+        margin-left: 500px;
+        background-color: rgba(135, 147, 157);
+        border-radius: 15px;
+        box-shadow: 10px 12px 20px black;
+
     }
-    label{margin-left: 200px;}
 
-    #rg{margin-left: 50px;}
-    #g{margin-left: 45px;}
-    #d{margin-left: 58px;
-        width: 170px;}
-    #e{margin-left: 57px;}
-    #p{margin-left: 26px;}
-    #De{margin-left: 15px;}
-    #c{margin-left: 49px;}
-    #s{margin-left: 47px;}
-    #co{margin-left: 45px;}
-    #ad{margin-left: 50px;}
-    #f{margin-left: 43px;}
+    label {
+        margin-left: 200px;
+    }
 
-        #b1{
-            margin-left: 300px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
+    #rg {
+        margin-left: 50px;
+    }
 
+    #g {
+        margin-left: 45px;
+    }
+
+    #d {
+        margin-left: 58px;
+        width: 170px;
+    }
+
+    #e {
+        margin-left: 57px;
+    }
+
+    #p {
+        margin-left: 26px;
+    }
+
+    #De {
+        margin-left: 15px;
+    }
+
+    #c {
+        margin-left: 49px;
+    }
+
+    #s {
+        margin-left: 47px;
+    }
+
+    #co {
+        margin-left: 45px;
+    }
+
+    #ad {
+        margin-left: 50px;
+    }
+
+    #f {
+        margin-left: 43px;
+    }
+
+    #b1:hover {
+        background-color: red;
+    }
+
+    #b1 {
+        margin-left: 300px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(42, 225, 81);
+        color: aliceblue;
+        height: 50px;
+        width: 100px;
+
+
+
+    }
+
+    ::placeholder {
+        text-align: center;
+    }
+
+    #form:hover {
+        box-shadow: 10px 15 px 20px black;
+
+    }
 </style>
+
 <body>
 
-    <form >
+    <form id="form">
         <h1 style="text-align: center;">Student Registration Form</h1>
         <label> Reg id:</label>
-        <input type="text" id ="rg">
+        <input type="text" id="rg" placeholder="Enter reg no" required>
         <br><br>
 
         <label> Student Name:</label>
-        <input type="text" id="">
+        <input type="text" id="" placeholder="Enter your name" required>
         <br><br>
 
         <label> Gender:</label>
-        <input type="text" id="g">
+        <input type="radio" id="g" value="gender">Male
+        <input type="radio" id="g" value="gender">Female
+
         <br><br>
 
         <label> DOB:</label>
-        <input type="date" id="d">
+        <input type="date" id="d" placeholder="Enter DOB" required>
         <br><br>
 
         <label> email:</label>
-        <input type="email" id="e">
+        <input type="email" id="e" placeholder="Enter Email" required>
         <br><br>
 
         <label> phone no. :</label>
-        <input type="number" id="p">
+        <input type="number" id="p" placeholder="Enter phone no" required>
         <br><br>
 
         <label> Department :</label>
-        <input type="text" id="De">
+        <input type="text" id="De" placeholder="Enter Department" required>
         <br><br>
 
         <label> Course:</label>
-        <input type="text" id="c">
+        <input type="text" id="c" placeholder="Enter Course" required>
         <br><br>
 
         <label> Section:</label>
-        <input type="text" id="s">
+        <input type="text" id="s" placeholder="Enter Section" required>
         <br><br>
 
         <label> College:</label>
-        <input type="text" id="co">
+        <input type="text" id="co" placeholder="Enter Colleage" required>
         <br><br>
 
         <label> Adress:</label>
-        <textarea type="text" id="ad"></textarea>
+        <textarea type="text" id="ad" placeholder="Enter Adress"></textarea>
         <br><br>
 
         <label> Resume:</label>
@@ -84,7 +148,7 @@
         <br><br>
 
         <button id="b1">Submit</button>
-   
+
 
     </form>
 

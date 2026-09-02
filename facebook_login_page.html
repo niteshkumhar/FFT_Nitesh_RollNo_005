@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        form {
+             width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            border: 1px solid #dddfe2;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #111111;
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin-bottom: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 16px;
+            font-size: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 12px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #0066cc;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #0066cc;
+            color: #ffffff;
+            border: none;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 8px;
+            margin-bottom: 20px;
+        }
+
+        .login-btn:hover {
+            background-color: #0052a3;
+        }
+
+        .forgot-link {
+            display: block;
+            text-align: center;
+            color: #111111;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 35px;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+
+        .create-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffffff;
+            color: #0066cc;
+            border: 1px solid #0066cc;
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .create-btn:hover {
+            background-color: #f2f7ff;
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Log in to Facebook</h2>
+        <p>
+            <input type="text" placeholder="Email address or phone number" required>
+        </p>
+        <p>
+            <input type="password" placeholder="Password" required>
+        </p>
+        <button type="submit" class="login-btn">Log in</button>
+        <a href="#" class="forgot-link">Forgotten password?</a>
+        <button type="button" class="create-btn">Create new account</button>
+    </form>
+    <p class="footer-text">
+        Powered by Meta
+    </p>
+</body>
+</html>
